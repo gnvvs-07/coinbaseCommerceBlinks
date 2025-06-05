@@ -30,17 +30,6 @@ export default function HeroSection() {
                   </Button>
                 </Link>
               </div>
-              <div>
-                <Link href="https://www.solanablinks.me">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="w-full px-8 py-3 md:py-4 md:text-lg md:px-10 border-pink-500 text-pink-700 dark:text-pink-300 hover:bg-white/10 backdrop-blur-sm"
-                  >
-                    Learn More
-                  </Button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
