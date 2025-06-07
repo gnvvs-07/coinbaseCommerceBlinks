@@ -4,17 +4,14 @@ import { getServerSession } from "next-auth"
 import { CoinbaseProductResponse } from "@/lib/products"
 
 export async function GET(request: NextRequest) {
-  const session = await getServerSession()
-  const apiKey = session?.user?.apiKey
+  const { searchParams } = new URL(request.url);
+  const apiKey = searchParams.get("apiKey");
   console.log("apiKey in session route ", apiKey)
-  // if (!apiKey) {
-  //   return NextResponse.json({ error: "API key shit is required" }, { status: 401 })
-  // }
 
   try {
     const response = await fetch("https://api.commerce.coinbase.com/checkouts", {
       headers: {
-        "X-CC-Api-Key": "cd540830-38b7-4686-ac94-ffb8df3559dc",
+        "X-CC-Api-Key": apiKey || "",
         "X-CC-Version": "2018-03-22",
         "Content-Type": "application/json",
       },
