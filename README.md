@@ -19,7 +19,7 @@ Welcome to **Coinbase Beta Ecommerce Blinks** — the fastest way to enable inst
 
 > **⚠️ Caution: Image URLs in Coinbase Beta Ecommerce**
 >
-> Currently, Coinbase Beta Ecommerce is in beta and **does not support image URLs** in its API or dashboard. To display product images in your store:
+> Currently, Coinbase Beta Ecommerce is in beta and **does not support upload image Functionality** in its API or dashboard. To display product images in your store:
 >
 > - **Paste the image URL as the very first line** in the product's description field in your Coinbase Ecommerce dashboard.
 > - After the image URL, add the actual product description on the after that.
